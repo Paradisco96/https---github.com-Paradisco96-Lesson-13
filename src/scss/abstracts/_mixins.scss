@@ -1,0 +1,33 @@
+@mixin change-size-animation {
+  animation: change-size 2s ease-in-out infinite alternate;
+  // width: 96px;
+  // height: 96px;
+}
+
+@keyframes change-size {
+  0% {
+    transform: scaleY(1);
+    transform-origin: 0 0;
+  }
+  100% {
+    transform: scaleY(0.3);
+    transform-origin: 2px 2px;
+  }
+}
+
+@mixin change-stroke-animation {
+  stroke: #c546fc;
+  animation: change-stroke 2s ease-in-out infinite alternate;
+}
+
+@keyframes change-stroke {
+  0% {
+    stroke: #c546fc;
+  }
+  50% {
+    stroke: #843ffb;
+  }
+  100% {
+    stroke: #3f5efb;
+  }
+}

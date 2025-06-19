@@ -1,0 +1,17 @@
+@use 'mixins' as *;
+
+.icons__square {
+  @include change-size-animation;
+}
+
+.icons__rect {
+  @include change-stroke-animation;
+}
+
+.icons__circle {
+  @include change-size-animation;
+}
+
+.icons__ellipse {
+  @include change-stroke-animation;
+}
